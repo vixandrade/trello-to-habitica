@@ -59,7 +59,7 @@ exports.createTrelloWebhooker = (req, res) => {
     var url = 'https://api.trello.com/1/tokens/' + config.trello_token + '/webhooks/?key=' + config.trello_key;
     var data = {
         description: 'My first webhook',
-        callbackURL: config.heroku_api + '/trello/trelloWHCallback',
+        callbackURL: config.droplet_address + '/trello/trelloWHCallback',
         idModel: trelloBoardId
     };
 
