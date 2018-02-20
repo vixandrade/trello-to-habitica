@@ -83,3 +83,4 @@ node_modules/
 *.xlsx
 
 /node_modules
+config.js
